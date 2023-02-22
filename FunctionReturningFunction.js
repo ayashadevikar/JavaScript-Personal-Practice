@@ -2,13 +2,23 @@
 
 
 
-function myFunc(){
-    function hello(){
+// function myFunc(){
+//     function hello(){
+//         console.log("hello world");
+//     }
+//     return hello;
+
+// }
+
+// const ans = myFunc();
+// ans();
+
+function hello(){
+    function hello2(){
         console.log("hello world");
     }
-    return hello;
-
+    return hello2;
 }
 
-const ans = myFunc();
+const ans = hello();
 ans();
