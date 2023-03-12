@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p class="fsjs" id="fsjs2"><span>Lorem </span>ipsum dolor sit.</p>
+    <!-- <p id="fsjs1">hello</p>
+    <p class="bootcamp">bye</p> -->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+    </ul>
+
+    <ul>
+        <li class="tech">JS</li>
+        <li class="tech">HTML</li>
+        <li class="tech">CSS</li>
+    </ul>
+
+    <script>
+    //    console.log(document);
+    //    console.log(window.document);
+    // console.log(document.documentElement);
+
+    // console.log(document.head);
+    // console.log(document.body);
+    // console.log(document.body.firstChild);
+    // console.log(document.body.firstElementChild);
+
+    // by id
+
+    //  let val = document.getElementById("fsjs2");
+    //  console.log(val.innerHTML);
+
+    // by class
+
+    // let val = document.getElementsByClassName("tech");
+    // console.log(val);
+    // console.log(val[0].innerText);
+    // console.log(val[1].innerText);
+    // val[1].innerText = 'alex'
+    // val[2].innerText = '<h1>Hello </h1>'
+
+    // query selector
+
+    let h1 = document.querySelector("h1").innerText;
+
+    console.log(h1);
+
+    let p = document.querySelector("#fsjs1").innerText;
+    console.log(p);
+
+    let p2 = document.querySelector(".bootcamp").innerText;
+    console.log(p2);
+
+    
+
+    
+
+
+    </script>
+</body>
+</html>
