@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+      <h1>Hello Javascript Bootcamp</h1>
+      <ul>
+
+      </ul>
+
+      <button onclick="maths()" id="fsjs">Submit</button>
+      <p id="js"></p>
+
+      <script>
+             // insert inner HTML
+             const list = `
+                 <li>alex</li>
+                 <li>john</li>
+                 <li>daniel</li>
+                 <li>joe</li>
+                 <li>alice</li>
+                 <li>harry</li>
+             `;
+
+   const ul = document.querySelector("ul");
+   ul.innerHTML = list;
+
+   // Create Element on Screen
+   let h1 = document.createElement("h1");
+   h1.className = "title";
+   h1.style.color = "green";
+   h1.style.fontSize = "25px";
+   h1.textContent = "Hello I am Learning JavaScript DOM Manipulation";
+   console.log(h1);
+   document.body.appendChild(h1);
+
+   // for loop
+
+   for(let i=0; i<3; i++){
+    let para = document.createElement("p");
+    para.className = "FSJS";
+    para.style.fontSize = "16px";
+    console.log(para);
+    para.textContent = i;
+    document.body.appendChild(para);
+   }
+
+    // function
+   function maths() {
+    let value = prompt("Solve This 50 -30");
+    if (value == 20) {
+        document.getElementById("js").innerText = "Success";
+        document.getElementById("js").style.backgroundColor = "Green";
+    }
+    else {
+        document.getElementById("js").innerText = "Failed";
+        document.getElementById("js").style.backgroundColor = "Red";
+    }
+   }
+
+
+      </script>
+</body>
+</html>
